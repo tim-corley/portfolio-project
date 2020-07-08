@@ -11,7 +11,9 @@ import {
   faPaperPlane,
   faTools,
   faDatabase,
-  faDraftingCompass
+  faDraftingCompass,
+  faAngleDoubleRight,
+  faAngleDoubleLeft
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -20,6 +22,8 @@ library.add(
   fab,
   faDatabase,
   faDraftingCompass,
+  faAngleDoubleRight,
+  faAngleDoubleLeft,
   faLaptopCode,
   faDrawPolygon,
   faEdit,

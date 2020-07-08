@@ -1,0 +1,27 @@
+/*https://github.com/glennflanagan/react-collapsible/tree/develop/example*/
+/*https://www.npmjs.com/package/react-collapsible*/
+
+.Collapsible {
+  display: flex;
+  padding-bottom: 0.75rem;
+}
+
+/* .CustomTriggerCSS {
+  color: #a0aec0;
+  transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+  color: #a0aec0;
+} */
+
+/* .CustomOuterContentCSS {
+  color: #212c34;
+  background-color: #fb5870;
+}
+
+.CustomInnerContentCSS {
+  color: #fffce2;
+  background-color: #f97c7c;
+  border: 2px solid red;
+} */
