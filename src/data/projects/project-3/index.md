@@ -2,6 +2,9 @@
 category: 'projects'
 cover: './project-3.jpg'
 title: '3rd Project'
+tech: ['react', 'electron', 'tailwindcss']
+repo: 'https://github.com/tim-corley/electron-react-todo'
+demo: 'https://www.electronjs.org/docs'
 ---
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+A desktop application to help keep track of daily tasks.

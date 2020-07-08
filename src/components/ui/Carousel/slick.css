@@ -5,6 +5,7 @@
 
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
+  margin-top: 1.5rem;
   font-size: 12px !important;
   opacity: 0.5 !important;
 }

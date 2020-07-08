@@ -2,6 +2,9 @@
 category: 'projects'
 cover: './project-2.jpg'
 title: 'Demo Project'
+tech: ['react', 'firebase', 'tailwindcss']
+repo: 'https://github.com/tim-corley/asset-tracker-app'
+demo: 'https://firebase.google.com/docs'
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Simple tool that enables users to check the real-time status of their asset(s).

@@ -9,8 +9,6 @@ module.exports = {
     author: `Tim Corley`
   },
   plugins: [
-    // https://www.gatsbyjs.org/docs/data-fetching/
-    // https://www.gatsbyjs.org/docs/environment-variables/
     {
       resolve: 'gatsby-source-github',
       options: {

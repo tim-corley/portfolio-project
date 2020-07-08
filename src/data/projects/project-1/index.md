@@ -2,6 +2,9 @@
 category: 'projects'
 cover: './project-1.jpg'
 title: 'First Project'
+tech: ['python', 'django', 'heroku']
+repo: 'https://github.com/tim-corley/learn-django'
+demo: 'https://www.djangoproject.com/'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Contains various projects utilizing the Django Web Framework. They are primarily derived from online guides & tutorials.

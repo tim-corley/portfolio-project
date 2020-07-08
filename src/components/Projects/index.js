@@ -28,6 +28,9 @@ const Projects = () => {
             html
             frontmatter {
               title
+              tech
+              repo
+              demo
               cover {
                 childImageSharp {
                   fluid(maxWidth: 80) {
@@ -54,7 +57,7 @@ const Projects = () => {
             const {
               id,
               html,
-              frontmatter: { cover, title }
+              frontmatter: { cover, title, tech, repo, demo }
             } = item.node;
 
             return (
@@ -64,6 +67,20 @@ const Projects = () => {
                 </Styled.Image>
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
+                <Styled.Link>
+                  <a href={repo} target="_blank" rel="noopener noreferrer" key={id}>
+                    <Styled.Text>
+                      <span>REPO</span>
+                    </Styled.Text>
+                  </a>
+                </Styled.Link>
+                <Styled.Link>
+                  <a href={demo} target="_blank" rel="noopener noreferrer" key={id}>
+                    <Styled.Text>
+                      <span>DEMO</span>
+                    </Styled.Text>
+                  </a>
+                </Styled.Link>
               </Styled.Project>
             );
           })}

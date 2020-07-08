@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Projects = styled.div`
-  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4`};
+  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4 rounded-lg border border-gray-300`};
 `;
 
 export const Project = styled.div`
@@ -21,8 +21,16 @@ export const Title = styled.h3`
   ${tw`font-semibold my-4`};
 `;
 
+export const Link = styled.h3`
+  ${tw`inline-block px-10 m-4 rounded-full border border-pink-500`};
+`;
+
+export const Text = styled.div`
+  ${tw`text-pink-500`};
+`;
+
 export const Separator = styled.h2`
-  ${tw`relative w-2 h-8 mb-6 mt-8`};
+  ${tw`relative w-2 h-8 mb-6 mt-10`};
   ${({ center }) => center && tw`mx-auto`};
 
   &:before {
