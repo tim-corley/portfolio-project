@@ -5,6 +5,10 @@ export const SliderMenu = styled.div`
   ${tw`flex items-stretch flex-row m-auto w-full`};
 `;
 
-export const Item = styled.div`
-  ${tw`text-xs text-pink-500 w-full text-center mx-2`};
+export const Key = styled.span`
+  ${tw`font-bold text-xs text-pink-500 w-full text-center`};
+`;
+
+export const Val = styled.span`
+  ${tw`text-xs text-pink-500 w-full text-center mx-1`};
 `;

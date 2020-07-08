@@ -6,6 +6,7 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
+import Modal from 'components/ui/Modal';
 import SliderMenu from 'components/ui/SliderMenu';
 import * as Styled from './styles';
 
@@ -53,7 +54,6 @@ const Projects = () => {
 
   const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
-  // console.log(projects);
 
   return (
     <Container section>
@@ -70,6 +70,7 @@ const Projects = () => {
             return (
               <Styled.Project key={id}>
                 <SliderMenu tech={tech}></SliderMenu>
+                <Modal></Modal>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>
