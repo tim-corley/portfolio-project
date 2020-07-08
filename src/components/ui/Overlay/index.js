@@ -13,10 +13,13 @@ const Overlay = ({ tech }) => {
   const techItems = Object.entries(data).map(([key, value]) => {
     if (value) {
       return (
-        <>
-          <h2>{key}:</h2>
-          <h3>{value}</h3>
-        </>
+        <Styled.List key={key}>
+          <ul>
+            <li>
+              {key}: {value}
+            </li>
+          </ul>
+        </Styled.List>
       );
     } else {
       return null;
@@ -27,11 +30,11 @@ const Overlay = ({ tech }) => {
       <Popover
         content={
           <Pane
-            width={240}
-            height={240}
+            minWidth={200}
+            minHeight={60}
             display="flex"
-            alignItems="center"
-            justifyContent="center"
+            alignItems="left"
+            justifyContent="left"
             flexDirection="column"
           >
             <Text>{techItems}</Text>

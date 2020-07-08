@@ -6,7 +6,7 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
-import Overlay from 'components/ui/Popover';
+import Overlay from 'components/ui/Overlay';
 import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
