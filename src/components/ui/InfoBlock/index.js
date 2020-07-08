@@ -8,6 +8,7 @@ import * as Styled from './styles';
 const InfoBlock = ({ icon, title, content, center }) => (
   <Styled.InfoBlock center={center}>
     <Styled.Icon>
+      {/* <Icon icon={['fab', 'twitter']} /> */}
       <Icon icon={icon} />
     </Styled.Icon>
     <Styled.Wrapper center={center}>

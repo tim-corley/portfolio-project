@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-personal-website-starter",
+  "name": "gatsby-portfolio-site",
   "private": true,
-  "description": "Gatsby Markdown Personal Website Starter, using Styled Components, Tailwindcss and Framer Motion.",
+  "description": "My portfolio site! Explore my projects, review my resume, read my blog, and get in touch.",
   "version": "0.1.0",
-  "author": "Saimir Kapaj",
+  "author": "Tim Corley",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",

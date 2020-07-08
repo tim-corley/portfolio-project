@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import Banner from 'components/ui/Banner';
 
 const HeroBanner = () => {
