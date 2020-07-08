@@ -4,24 +4,22 @@ import SEO from 'components/SEO';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const ContactPage = () => {
-  const myRepos = useStaticQuery(graphql`
+  const myStarredRepos = useStaticQuery(graphql`
     query {
-      githubRepositoryowner {
-        id
-        login
-        repositories {
-          edges {
-            node {
-              id
-              name
-              createdAt
-            }
+      allGithubStarredrepositories {
+        edges {
+          node {
+            id
+            name
+            url
+            homepageUrl
+            createdAt
           }
         }
       }
     }
   `);
-  console.log(myRepos);
+  console.log(myStarredRepos);
   return (
     <Layout>
       <SEO title="Projects" />

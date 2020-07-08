@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
     title: `Tim's Portfolio`,
@@ -5,22 +9,24 @@ module.exports = {
     author: `Tim Corley`
   },
   plugins: [
+    // https://www.gatsbyjs.org/docs/data-fetching/
+    // https://www.gatsbyjs.org/docs/environment-variables/
     {
       resolve: 'gatsby-source-github',
       options: {
         headers: {
-          Authorization: `Bearer e1751899237ddc4f238fe3901991f16abf183360`
+          Authorization: process.env.GATSBY_GITHUB_TOKEN
         },
         queries: [
           `{
-            repositoryOwner(login: "tim-corley") {
-              id
-              login
-              repositories(last: 100, orderBy: {field:CREATED_AT, direction:DESC}) {
+            user(login: "tim-corley") {
+              starredRepositories (ownedByViewer: true, last: 12) {
                 edges {
                   node {
                     id
                     name
+                    url
+                    homepageUrl
                     createdAt
                   }
                 }
