@@ -6,7 +6,7 @@ export const Email = styled.section`
 `;
 
 export const Form = styled.div`
-  ${tw`flex flex-col items-center justify-center mx-auto mt-4`};
+  ${tw`flex flex-col w-full items-center justify-center mx-auto mt-4`};
 `;
 
 export const Input = styled.input`

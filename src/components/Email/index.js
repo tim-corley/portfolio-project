@@ -32,9 +32,7 @@ const Email = () => {
           <Styled.Input type="text" placeholder={email.namePlaceholder} />
           <Styled.Input type="email" placeholder={email.emailPlaceholder} />
           <Styled.TextArea type="textarea" placeholder={email.messagePlaceholder} />
-          <Button primary block>
-            {email.submitPlaceholder}
-          </Button>
+          <Button primary>{email.submitPlaceholder}</Button>
         </Styled.Form>
       </Container>
     </Styled.Email>

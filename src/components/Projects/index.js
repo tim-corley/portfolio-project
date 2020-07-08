@@ -6,7 +6,7 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
-import SliderMenu from 'components/ui/SliderMenu';
+import Overlay from 'components/ui/Popover';
 import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
@@ -68,7 +68,7 @@ const Projects = () => {
 
             return (
               <Styled.Project key={id}>
-                <SliderMenu tech={tech}></SliderMenu>
+                <Overlay tech={tech}></Overlay>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>
