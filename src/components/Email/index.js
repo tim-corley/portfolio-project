@@ -28,11 +28,13 @@ const Email = () => {
     <Styled.Email>
       <Container section>
         <TitleSection title={email.title} subtitle={email.subtitle} center />
-        <Styled.Form>
-          <Styled.Input type="text" placeholder={email.namePlaceholder} />
-          <Styled.Input type="email" placeholder={email.emailPlaceholder} />
-          <Styled.TextArea type="textarea" placeholder={email.messagePlaceholder} />
-          <Button primary>{email.submitPlaceholder}</Button>
+        <Styled.Form form action="https://getform.io/f/1595fbdc-b298-42c6-a060-0543842ca415" method="POST">
+          <Styled.Input type="text" name="name" placeholder={email.namePlaceholder} />
+          <Styled.Input type="email" name="email" placeholder={email.emailPlaceholder} />
+          <Styled.TextArea type="textarea" name="message" placeholder={email.messagePlaceholder} />
+          <Button primary type="submit">
+            {email.submitPlaceholder}
+          </Button>
         </Styled.Form>
       </Container>
     </Styled.Email>

@@ -5,7 +5,7 @@ export const Email = styled.section`
   ${tw`bg-gray-100 border-t border-indigo-100 mt-auto`};
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   ${tw`flex flex-col w-full items-center justify-center mx-auto mt-4`};
 `;
 
