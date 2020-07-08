@@ -70,12 +70,7 @@ const Projects = () => {
 
             return (
               <Styled.Project key={id}>
-                <SliderMenu
-                  language={tech[0].language}
-                  framework={tech[0].framework}
-                  styling={tech[0].styling}
-                  hosting={tech[0].hosting}
-                ></SliderMenu>
+                <SliderMenu data={tech[0]}></SliderMenu>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>

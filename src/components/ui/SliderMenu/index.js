@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as Styled from './styles';
 
-const SliderMenu = ({ language, framework, styling, hosting }) => (
+const SliderMenu = ({ data }) => (
   <Styled.SliderMenu>
-    {language ? <Styled.Item>{language}</Styled.Item> : null}
-    {framework ? <Styled.Item>{framework}</Styled.Item> : null}
-    {styling ? <Styled.Item>{styling}</Styled.Item> : null}
-    {hosting ? <Styled.Item>{hosting}</Styled.Item> : null}
+    {data.language ? <Styled.Item>{data.language}</Styled.Item> : null}
+    {data.framework ? <Styled.Item>{data.framework}</Styled.Item> : null}
+    {data.styling ? <Styled.Item>{data.styling}</Styled.Item> : null}
+    {data.hosting ? <Styled.Item>{data.hosting}</Styled.Item> : null}
   </Styled.SliderMenu>
 );
 
