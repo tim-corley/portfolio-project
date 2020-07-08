@@ -74,10 +74,6 @@ const Projects = () => {
             return (
               <Styled.Project key={id}>
                 <RevealExampleMoveRight top={<Image src={imgSrc} fluid />} bottom={<TechStack tech={tech} />} />
-                {/* <TechStack tech={tech}></TechStack> */}
-                {/* <Styled.Image>
-                  <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                </Styled.Image> */}
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
                 <Styled.Link>

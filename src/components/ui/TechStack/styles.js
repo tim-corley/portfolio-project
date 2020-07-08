@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Wrapper = styled.div`
-  ${tw`px-2 my-2`};
+  ${tw`overflow-auto h-64 my-4`};
 `;
 
 export const Timeline = styled.div`
-  ${tw`flex flex-col sm:flex-row w-full p-4 relative border-l border-indigo-200 mx-6`};
+  ${tw`flex-1 sm:flex-row w-full p-4 relative border-l border-indigo-200 mx-6`};
 
   &:last-child {
     ${tw`pb-0`};
