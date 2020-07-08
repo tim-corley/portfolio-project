@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'components/ui/Icon';
-import Timeline from 'components/ui/Timeline';
 import * as Styled from './styles';
 
 const TechItem = ({ component, content }) => {

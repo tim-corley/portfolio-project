@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Email = styled.section`
-  ${tw`bg-gray-100 border-t border-indigo-100 mt-auto`};
+  ${tw`bg-gray-100 border-t border-gray-100 mt-auto`};
 `;
 
 export const Form = styled.form`
@@ -14,5 +14,5 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  ${tw`bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-2 px-4 block w-full appearance-none leading-normal mb-3`};
+  ${tw`bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-2 px-4 block w-full appearance-none leading-normal mb-8`};
 `;

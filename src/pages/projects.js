@@ -7,7 +7,7 @@ import TitleSection from 'components/ui/TitleSection';
 import { graphql, useStaticQuery } from 'gatsby';
 import * as Styled from '../components/Services/styles';
 
-const ContactPage = () => {
+const ProjectsPage = () => {
   const projectData = useStaticQuery(graphql`
     query {
       allGithubStarredrepositories {
@@ -40,7 +40,7 @@ const ContactPage = () => {
         <TitleSection title={headerContent.title} subtitle={headerContent.subtitle} center />
         <Styled.Services>
           {repoData.map((repo) => {
-            const { id, name, url, hompageUrl } = repo.node;
+            const { id, name, url } = repo.node;
 
             return (
               <Styled.ServiceItem key={id}>
@@ -54,4 +54,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ProjectsPage;

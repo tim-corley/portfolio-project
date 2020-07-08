@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Timeline = styled.div`
-  ${tw`flex-1 sm:flex-row w-full p-4 relative border-l border-indigo-200 mx-6`};
+  ${tw`flex-1 sm:flex-row w-full p-4 relative border-l border-gray-200 mx-6`};
 
   &:last-child {
     ${tw`pb-0`};
@@ -26,12 +26,12 @@ export const Subtitle = styled.div`
 `;
 
 export const Date = styled.div`
-  ${tw`text-xs border border-pink-500 rounded-full px-2`};
+  ${tw`text-xs border border-teal-500 rounded-full px-2`};
   width: fit-content;
 `;
 
 export const Point = styled.span`
-  ${tw`w-3 h-3 border border-indigo-200 bg-indigo-100 rounded-full absolute`};
+  ${tw`w-3 h-3 border border-gray-200 bg-gray-100 rounded-full absolute`};
   left: -6px;
   top: 20px;
 `;

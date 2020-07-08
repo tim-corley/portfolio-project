@@ -9,12 +9,12 @@ export const Links = styled.div`
   ${tw`flex items-center justify-center w-full`};
 
   a {
-    ${tw`text-indigo-900 hover:text-indigo-600 mx-2`};
+    ${tw`text-gray-900 hover:text-gray-600 mx-2`};
   }
 `;
 
 export const Link = styled.a`
-  ${tw`text-indigo-900 hover:text-indigo-600 mx-2`};
+  ${tw`text-gray-900 hover:text-gray-600 mx-2`};
 `;
 
 export const SocialItem = styled.div`
@@ -22,5 +22,5 @@ export const SocialItem = styled.div`
 `;
 
 export const Icon = styled.span`
-  ${tw`flex items-center justify-center w-12 h-12 border border-pink-500 rounded-full mb-2 text-2xl`};
+  ${tw`flex items-center justify-center w-12 h-12 border border-teal-500 rounded-full mb-2 text-2xl`};
 `;

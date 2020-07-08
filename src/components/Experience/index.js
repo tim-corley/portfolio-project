@@ -5,7 +5,7 @@ import Timeline from 'components/ui/Timeline';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
-import resumeFile from '../../assets/TIM_CORLEY_RESUME.pdf';
+import resumeFile from '../../assets/TIM_CORLEY_RESUME(2020).pdf';
 import * as Styled from './styles';
 
 const Experience = () => {
@@ -39,13 +39,12 @@ const Experience = () => {
 
   const sectionTitle = markdownRemark.frontmatter;
   const experiences = allMarkdownRemark.edges;
-  console.log(resumeFile);
 
   return (
     <Container section>
       <Styled.Btn>
         <a href={resumeFile} download>
-          <Button primary>Download Résumé</Button>
+          <Button primary>Download Resume</Button>
         </a>
       </Styled.Btn>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
