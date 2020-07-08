@@ -1,13 +1,12 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
 import Loadable from '@loadable/component';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
 import TechStack from 'components/ui/TechStack';
-import RevealExampleMoveRight from 'components/ui/Demo';
+import RevealExampleMoveRight from 'components/ui/Reveal';
 import { Image } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import * as Styled from './styles';
@@ -68,7 +67,6 @@ const Projects = () => {
               html,
               frontmatter: { cover, title, tech, repo, demo }
             } = item.node;
-
             const imgSrc = cover.childImageSharp.fluid.src;
 
             return (

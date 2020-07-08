@@ -1,7 +1,6 @@
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { Image, Reveal } from 'semantic-ui-react';
-import * as Styled from './styles';
 
 const RevealExampleMoveRight = ({ top, bottom }) => (
   <Reveal animated="move right">
