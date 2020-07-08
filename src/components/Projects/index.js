@@ -6,6 +6,7 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
+import SliderMenu from 'components/ui/SliderMenu';
 import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
@@ -28,9 +29,14 @@ const Projects = () => {
             html
             frontmatter {
               title
-              tech
               repo
               demo
+              tech {
+                language
+                framework
+                styling
+                hosting
+              }
               cover {
                 childImageSharp {
                   fluid(maxWidth: 80) {
@@ -48,6 +54,8 @@ const Projects = () => {
   const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
 
+  console.log(projects);
+
   return (
     <Container section>
       <TitleSection title={projectData.title} subtitle={projectData.subtitle} center />
@@ -62,6 +70,12 @@ const Projects = () => {
 
             return (
               <Styled.Project key={id}>
+                <SliderMenu
+                  language={tech[0].language}
+                  framework={tech[0].framework}
+                  styling={tech[0].styling}
+                  hosting={tech[0].hosting}
+                ></SliderMenu>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>

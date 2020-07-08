@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Projects = styled.div`
-  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4 rounded-lg border border-gray-300`};
+  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4 rounded-lg border border-gray-300 shadow-md`};
 `;
 
 export const Project = styled.div`
@@ -10,10 +10,10 @@ export const Project = styled.div`
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mx-auto border border-pink-500 rounded-full`};
+  ${tw`w-full mx-auto`};
 
   img {
-    ${tw`border-4 border-white rounded-full`};
+    ${tw`border-1 border-gray-300`};
   }
 `;
 
@@ -42,4 +42,8 @@ export const Separator = styled.h2`
     content: '';
     ${tw`bg-pink-500 h-6 w-px absolute ml-1`};
   }
+`;
+
+export const Top = styled.p`
+  ${tw`flex items-center justify-center text-sm text-pink-500 p-2`};
 `;

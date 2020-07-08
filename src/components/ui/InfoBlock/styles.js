@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const InfoBlock = styled.div`
-  ${tw`flex flex-col my-4 mx-3 p-4 bg-white rounded-lg border border-gray-300`};
+  ${tw`flex flex-col my-4 mx-3 p-4 bg-white rounded-lg border border-gray-300 shadow-md`};
   ${({ center }) => center && tw`items-center`};
 `;
 
