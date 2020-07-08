@@ -20,3 +20,18 @@ export const Image = styled.figure`
 export const Title = styled.h3`
   ${tw`font-semibold my-4`};
 `;
+
+export const Separator = styled.h2`
+  ${tw`relative w-2 h-8 mb-6 mt-8`};
+  ${({ center }) => center && tw`mx-auto`};
+
+  &:before {
+    content: '';
+    ${tw`bg-indigo-900 h-full w-px absolute left-0`};
+  }
+
+  &:after {
+    content: '';
+    ${tw`bg-pink-500 h-6 w-px absolute ml-1`};
+  }
+`;

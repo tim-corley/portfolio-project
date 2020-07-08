@@ -1,15 +1,14 @@
 import React from 'react';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
-import Posts from 'components/Posts';
 
-const BlogPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Blog" />
-      <Posts />
+      <SEO title="Projects" />
+      <h1>Project Page</h1>
     </Layout>
   );
 };
 
-export default BlogPage;
+export default ContactPage;

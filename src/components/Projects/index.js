@@ -1,11 +1,11 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Loadable from '@loadable/component';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
-
+import Button from 'components/ui/Button';
 import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
@@ -17,6 +17,8 @@ const Projects = () => {
         frontmatter {
           title
           subtitle
+          linkTo
+          linkText
         }
       }
       allMarkdownRemark(filter: { frontmatter: { category: { eq: "projects" } } }) {
@@ -40,12 +42,12 @@ const Projects = () => {
     }
   `);
 
-  const sectionTitle = markdownRemark.frontmatter;
+  const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
+      <TitleSection title={projectData.title} subtitle={projectData.subtitle} center />
       <Styled.Projects>
         <Carousel>
           {projects.map((item) => {
@@ -67,6 +69,10 @@ const Projects = () => {
           })}
         </Carousel>
       </Styled.Projects>
+      <Link to={projectData.linkTo}>
+        <Styled.Separator />
+        <Button primary>{projectData.linkText}</Button>
+      </Link>
     </Container>
   );
 };

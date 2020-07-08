@@ -31,7 +31,7 @@ const HeroBanner = () => {
   );
 };
 
-HeroBanner.propTypes = {
+Banner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
