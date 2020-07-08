@@ -7,6 +7,9 @@ import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 import Button from 'components/ui/Button';
 import TechStack from 'components/ui/TechStack';
+import RevealExampleMoveRight from 'components/ui/Demo';
+import { Image } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
@@ -39,8 +42,8 @@ const Projects = () => {
               }
               cover {
                 childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
+                  fixed(width: 800) {
+                    ...GatsbyImageSharpFixed
                   }
                 }
               }
@@ -53,6 +56,8 @@ const Projects = () => {
 
   const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
+  console.log(projects);
+  console.log(projects[0].node.frontmatter.cover.childImageSharp.fixed.src);
 
   return (
     <Container section>
@@ -66,12 +71,17 @@ const Projects = () => {
               frontmatter: { cover, title, tech, repo, demo }
             } = item.node;
 
+            const imgSrc = cover.childImageSharp.fixed.src;
+            console.log(imgSrc);
+
             return (
               <Styled.Project key={id}>
-                <TechStack tech={tech}></TechStack>
-                <Styled.Image>
+                <img src={imgSrc} />
+                <RevealExampleMoveRight top={<Image src={imgSrc} fluid />} bottom={<TechStack tech={tech} />} />
+                {/* <TechStack tech={tech}></TechStack> */}
+                {/* <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                </Styled.Image>
+                </Styled.Image> */}
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
                 <Styled.Link>

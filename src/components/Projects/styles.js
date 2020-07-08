@@ -9,7 +9,7 @@ export const Project = styled.div`
   ${tw`flex flex-col items-center text-center mt-4 outline-none`};
 `;
 
-export const Image = styled.figure`
+export const Image = styled.div`
   ${tw`w-full mx-auto`};
 
   img {
@@ -46,4 +46,12 @@ export const Separator = styled.h2`
 
 export const Top = styled.p`
   ${tw`flex items-center justify-center text-sm text-pink-500 p-2`};
+`;
+
+export const Block = styled.div`
+  ${tw`flex flex-col w-full bg-red-400 border-double border-4 border-gray-600`};
+`;
+
+export const BlockImg = styled.div`
+  ${tw`h-64 w-64 bg-blue-400 border border-2 border-red-600`};
 `;

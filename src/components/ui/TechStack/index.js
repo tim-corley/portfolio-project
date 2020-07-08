@@ -27,7 +27,7 @@ const TechStack = ({ tech }) => {
   });
   return (
     <>
-      <div>{techItems}</div>
+      <Styled.Wrapper>{techItems}</Styled.Wrapper>
     </>
   );
 };
