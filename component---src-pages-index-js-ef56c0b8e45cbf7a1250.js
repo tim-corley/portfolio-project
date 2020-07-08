@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{RXBc:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),c=t.n(n),l=t("Bl7J"),s=t("vrFN");t("ENlo");a.default=function(){return c.a.createElement(l.a,null,c.a.createElement(s.a,{title:"Home"}),c.a.createElement("div",{className:"note"},c.a.createElement("div",{className:"note-text-01 m-2 p-2"},"a few changes are being made..."),c.a.createElement("div",{className:"note-text-02 mx-3 py-3"},"please check back soon!")))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-ef56c0b8e45cbf7a1250.js.map
