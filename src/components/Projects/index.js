@@ -42,8 +42,8 @@ const Projects = () => {
               }
               cover {
                 childImageSharp {
-                  fixed(width: 800) {
-                    ...GatsbyImageSharpFixed
+                  fluid {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -56,8 +56,6 @@ const Projects = () => {
 
   const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
-  console.log(projects);
-  console.log(projects[0].node.frontmatter.cover.childImageSharp.fixed.src);
 
   return (
     <Container section>
@@ -71,12 +69,10 @@ const Projects = () => {
               frontmatter: { cover, title, tech, repo, demo }
             } = item.node;
 
-            const imgSrc = cover.childImageSharp.fixed.src;
-            console.log(imgSrc);
+            const imgSrc = cover.childImageSharp.fluid.src;
 
             return (
               <Styled.Project key={id}>
-                <img src={imgSrc} />
                 <RevealExampleMoveRight top={<Image src={imgSrc} fluid />} bottom={<TechStack tech={tech} />} />
                 {/* <TechStack tech={tech}></TechStack> */}
                 {/* <Styled.Image>

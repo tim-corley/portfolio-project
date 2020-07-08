@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Projects = styled.div`
-  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4 rounded-lg border border-gray-300 shadow-md`};
+  ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mt-4 mb-4 rounded-lg border border-gray-300 shadow-md`};
 `;
 
 export const Project = styled.div`
@@ -18,7 +18,7 @@ export const Image = styled.div`
 `;
 
 export const Title = styled.h3`
-  ${tw`font-semibold my-4`};
+  ${tw`font-semibold`};
 `;
 
 export const Link = styled.h3`
