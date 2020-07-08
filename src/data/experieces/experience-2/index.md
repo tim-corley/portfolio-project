@@ -1,11 +1,9 @@
 ---
 category: 'experiences'
-company: 'Aizoon Reply'
-position: 'UI/UX Designer'
-startDate: 'Jan 2011'
-endDate: 'May 2013'
+company: 'Wayfair'
+position: 'Merchandising Specialist'
+startDate: 'Oct 2012'
+endDate: 'Jul 2014'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Performed thorough quality assurance on incoming additions to the product catalog in order to ensure a clear, consistent experience for the customer. Successfully analyzed product data by utilizing internal tools, SQL scripts/queries, and Excel. Directly communicated with suppliers and categroy managers to resolve issues and/or retrieve additional product information.

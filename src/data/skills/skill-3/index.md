@@ -1,5 +1,5 @@
 ---
 category: 'skills'
-title: 'JavaScript'
+title: 'JavaScript (ES6)'
 percentage: 77
 ---

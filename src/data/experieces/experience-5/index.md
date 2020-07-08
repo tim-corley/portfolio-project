@@ -1,9 +1,9 @@
 ---
 category: 'experiences'
-company: 'The Great Gasby Inc'
-position: 'CEO & Founder'
-startDate: 'Jan 2018'
+company: 'Digital Lumens'
+position: 'Quality Assurance Engineer'
+startDate: 'Jul 2018'
 endDate: 'Present'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Responsible for the full range of testing (automated & manual) on the "SiteWorx" internet-of-things cloud application (web & mobile). As new features are rolled-out (backend & frontend), I coordinate with product managers and developers to outline acceptance criteria, document & organize test cases in our TestRail suite, execute manual, exploratory testing on development builds/branches, and develop automated UI tests with scripts written in Python and run with Selenium/Appium. In addition to the SiteWorx cloud applications, I test the in-house built commisioning software used by application engineers out in the field to configure and calibrate ligting fixtures/systems.

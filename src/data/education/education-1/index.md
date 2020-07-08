@@ -1,9 +1,9 @@
 ---
 category: 'education'
-university: 'Columbia University'
-degree: 'Bachelor'
-startDate: 'Oct 2005'
-endDate: 'Jul 2008'
+university: 'Northeastern University'
+degree: 'Bachelors Degree'
+startDate: 'Sept 2006'
+endDate: 'May 2011'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Graduated with a Bachelor of Science in Business Administration, completed 3 six-month, full-time co-op positions, co-hosted a campus radio show on WRBB for several semesters, and did a semester abroad in the Gold Coast of Austrailia at Bond University.

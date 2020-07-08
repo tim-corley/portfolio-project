@@ -1,6 +1,6 @@
 ---
 category: 'contact'
-title: 'Address'
+title: 'Location'
 icon: 'map-marker-alt'
-content: '235 Middle Neck Rd, Sands Point, New York, USA'
+content: 'Boston, Massachusetts'
 ---

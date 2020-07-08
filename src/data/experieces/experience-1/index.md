@@ -1,9 +1,10 @@
 ---
 category: 'experiences'
-company: 'Forge Inc'
-position: 'UI/UX Designer'
-startDate: 'Mar 2010'
-endDate: 'Dec 2010'
+company: 'Vail Resorts'
+position: 'Chairlift Operator'
+startDate: 'Dec 2011'
+endDate: 'Sept 2012'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Oversaw all functioning aspects of assigned chairlifts including: start-up / closing procedures, chair loading, guest assistance,
+and lift area maintenance. Quickly rose to the posisiton of team lead and received “Rookie of the Year” award for being voted best new member of the Breckenridge Lift Operations team.

@@ -1,9 +1,9 @@
 ---
 category: 'education'
-university: 'Stanford University'
-degree: 'Master of Science'
-startDate: 'Oct 2008'
-endDate: 'Jul 2010'
+university: 'General Assembly'
+degree: 'Coding Bootcamp'
+startDate: 'Oct 2019'
+endDate: 'Dec 2019'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.
+Completed a 10 week, on-campus JavaScript Development course that focused on ES6 funamentals, object-oriented programming, sing-page applications, jQuery, HTTP & DOM basics, consuming data via APIs, interacting with databases, and modern frameworks such as React.
