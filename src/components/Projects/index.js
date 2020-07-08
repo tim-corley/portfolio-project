@@ -53,8 +53,7 @@ const Projects = () => {
 
   const projectData = markdownRemark.frontmatter;
   const projects = allMarkdownRemark.edges;
-
-  console.log(projects);
+  // console.log(projects);
 
   return (
     <Container section>
@@ -70,7 +69,7 @@ const Projects = () => {
 
             return (
               <Styled.Project key={id}>
-                <SliderMenu data={tech[0]}></SliderMenu>
+                <SliderMenu tech={tech}></SliderMenu>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>

@@ -2,20 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as Styled from './styles';
 
-const SliderMenu = ({ data }) => (
-  <Styled.SliderMenu>
-    {data.language ? <Styled.Item>{data.language}</Styled.Item> : null}
-    {data.framework ? <Styled.Item>{data.framework}</Styled.Item> : null}
-    {data.styling ? <Styled.Item>{data.styling}</Styled.Item> : null}
-    {data.hosting ? <Styled.Item>{data.hosting}</Styled.Item> : null}
-  </Styled.SliderMenu>
-);
+const SliderMenu = ({ tech }) => {
+  console.log(tech);
+  const data = tech[0];
+  const techItems = Object.entries(data).map(([key, value]) => <Styled.Item>{value}</Styled.Item>);
+  return <Styled.SliderMenu>{techItems}</Styled.SliderMenu>;
+};
 
 SliderMenu.propTypes = {
-  language: PropTypes.string,
-  framework: PropTypes.string,
-  styling: PropTypes.string,
-  hosting: PropTypes.string
+  tech: PropTypes.array
 };
 
 export default SliderMenu;
