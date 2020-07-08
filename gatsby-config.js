@@ -5,6 +5,35 @@ module.exports = {
     author: `Tim Corley`
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-github',
+      options: {
+        headers: {
+          Authorization: `Bearer e1751899237ddc4f238fe3901991f16abf183360`
+        },
+        queries: [
+          `{
+            repository(owner: "tim-corley", name: "portfolio-project") {
+              issues(last: 20, states: OPEN) {
+                edges {
+                  node {
+                    id
+                    author {
+                      avatarUrl
+                      login
+                      url
+                    }
+                    bodyHTML
+                    title
+                    url
+                  }
+                }
+              }
+            }
+          }`
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
