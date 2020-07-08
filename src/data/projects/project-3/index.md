@@ -8,7 +8,7 @@ tech:
   - language: javascript
     framework: react, electron
     styling: tailwind
-    hosting: n/a
+    hosting:
 ---
 
 A desktop application to help keep track of daily tasks. ['react', 'electron', 'tailwindcss']

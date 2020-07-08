@@ -39,7 +39,7 @@ const Projects = () => {
               }
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 80) {
+                  fluid {
                     ...GatsbyImageSharpFluid
                   }
                 }
