@@ -13,19 +13,15 @@ module.exports = {
         },
         queries: [
           `{
-            repository(owner: "tim-corley", name: "portfolio-project") {
-              issues(last: 20, states: OPEN) {
+            repositoryOwner(login: "tim-corley") {
+              id
+              login
+              repositories(last: 100, orderBy: {field:CREATED_AT, direction:DESC}) {
                 edges {
                   node {
                     id
-                    author {
-                      avatarUrl
-                      login
-                      url
-                    }
-                    bodyHTML
-                    title
-                    url
+                    name
+                    createdAt
                   }
                 }
               }
