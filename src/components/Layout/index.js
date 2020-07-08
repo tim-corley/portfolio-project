@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Newsletter from 'components/Newsletter';
-
+import Email from 'components/Email';
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
 import * as Styled from './styles';
@@ -35,7 +33,7 @@ const Layout = ({ children }) => {
             transition={{ delay: 0.2 }}
           >
             {children}
-            <Newsletter />
+            <Email />
             <Footer />
           </motion.div>
         </Styled.Layout>

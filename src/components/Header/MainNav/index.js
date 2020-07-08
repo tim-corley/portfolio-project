@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-
 import * as Styled from './styles';
 
 const mainNavItems = [
   {
-    title: 'About Me',
+    title: 'Home',
     slug: '/'
+  },
+  {
+    title: 'Projects',
+    slug: '/projects/'
   },
   {
     title: 'Resume',
@@ -16,7 +19,7 @@ const mainNavItems = [
     slug: '/blog/'
   },
   {
-    title: 'Contact Me',
+    title: 'Contact',
     slug: '/contact/'
   }
 ];

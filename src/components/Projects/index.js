@@ -2,7 +2,6 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Loadable from '@loadable/component';
-
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
@@ -11,16 +10,16 @@ import * as Styled from './styles';
 
 const Carousel = Loadable(() => import('components/ui/Carousel'));
 
-const Testimonials = () => {
+const Projects = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "testimonials section" } }) {
+      markdownRemark(frontmatter: { category: { eq: "projects section" } }) {
         frontmatter {
           title
           subtitle
         }
       }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "testimonials" } } }) {
+      allMarkdownRemark(filter: { frontmatter: { category: { eq: "projects" } } }) {
         edges {
           node {
             id
@@ -42,14 +41,14 @@ const Testimonials = () => {
   `);
 
   const sectionTitle = markdownRemark.frontmatter;
-  const testimonials = allMarkdownRemark.edges;
+  const projects = allMarkdownRemark.edges;
 
   return (
     <Container section>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      <Styled.Testimonials>
+      <Styled.Projects>
         <Carousel>
-          {testimonials.map((item) => {
+          {projects.map((item) => {
             const {
               id,
               html,
@@ -57,19 +56,19 @@ const Testimonials = () => {
             } = item.node;
 
             return (
-              <Styled.Testimonial key={id}>
+              <Styled.Project key={id}>
                 <Styled.Image>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Styled.Image>
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
-              </Styled.Testimonial>
+              </Styled.Project>
             );
           })}
         </Carousel>
-      </Styled.Testimonials>
+      </Styled.Projects>
     </Container>
   );
 };
 
-export default Testimonials;
+export default Projects;

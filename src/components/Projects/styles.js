@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
-export const Testimonials = styled.div`
+export const Projects = styled.div`
   ${tw`max-w-screen-sm mx-auto w-full px-0 sm:px-16 mb-4`};
 `;
 
-export const Testimonial = styled.div`
+export const Project = styled.div`
   ${tw`flex flex-col items-center text-center mt-4`};
 `;
 

@@ -1,43 +1,44 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import Container from 'components/ui/Container';
 import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
 
 import * as Styled from './styles';
 
-const Newsletter = () => {
+const Email = () => {
   const { markdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "newsletter section" } }) {
+      markdownRemark(frontmatter: { category: { eq: "email section" } }) {
         frontmatter {
           title
           subtitle
           namePlaceholder
           emailPlaceholder
+          messagePlaceholder
           submitPlaceholder
         }
       }
     }
   `);
 
-  const newsletter = markdownRemark.frontmatter;
+  const email = markdownRemark.frontmatter;
 
   return (
-    <Styled.Newsletter>
+    <Styled.Email>
       <Container section>
-        <TitleSection title={newsletter.title} subtitle={newsletter.subtitle} center />
+        <TitleSection title={email.title} subtitle={email.subtitle} center />
         <Styled.Form>
-          <Styled.Input type="text" placeholder={newsletter.namePlaceholder} />
-          <Styled.Input type="email" placeholder={newsletter.emailPlaceholder} />
+          <Styled.Input type="text" placeholder={email.namePlaceholder} />
+          <Styled.Input type="email" placeholder={email.emailPlaceholder} />
+          <Styled.TextArea type="textarea" placeholder={email.messagePlaceholder} />
           <Button primary block>
-            {newsletter.submitPlaceholder}
+            {email.submitPlaceholder}
           </Button>
         </Styled.Form>
       </Container>
-    </Styled.Newsletter>
+    </Styled.Email>
   );
 };
 
-export default Newsletter;
+export default Email;

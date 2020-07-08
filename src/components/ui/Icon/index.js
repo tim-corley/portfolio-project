@@ -10,14 +10,16 @@ import {
   faPhone,
   faPaperPlane,
   faTools,
-  faRandom
+  faDatabase,
+  faDraftingCompass
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* add any additional icon to the library */
 library.add(
   fab,
-  faRandom,
+  faDatabase,
+  faDraftingCompass,
   faLaptopCode,
   faDrawPolygon,
   faEdit,
