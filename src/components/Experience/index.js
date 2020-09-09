@@ -5,7 +5,7 @@ import Timeline from 'components/ui/Timeline';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
-import resumeFile from '../../assets/TIM_CORLEY_RESUME(2020).pdf';
+import resumeFile from '../../assets/Tim_Corley_Resume.pdf';
 import * as Styled from './styles';
 
 const Experience = () => {
